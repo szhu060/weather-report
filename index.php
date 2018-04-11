@@ -33,11 +33,11 @@
     <script>
     	function searchWeather(){
     		var search = $('#city').val();
-    		var apiKey = "111013f04e69a7a58162202a72cb7964";
+		var apiKey = "111013f04e69a7a58162202a72cb7964";
     		$.get(
     			"http://api.openweathermap.org/data/2.5/weather?q=" + search + "&appid=" + apiKey,
 	    			function(data){
-	    				$('#info').html('<h3 class="text-primary">' + data.main.temp + '</h3>');
+	    				$('#info').html('<h4 class="text-primary">' + data.main.temp + '</h4>');
 	    			} 
     			);
 
